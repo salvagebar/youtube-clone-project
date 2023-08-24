@@ -17,6 +17,9 @@ export default function Searchbar() {
   return (
     <form>
       <input type="text" value={query} onChange={handleQuery} />
+      <button type="submit" onClick={searchVideos}>
+        Search
+      </button>
     </form>
   );
 }
